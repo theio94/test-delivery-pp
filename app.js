@@ -4,8 +4,7 @@ const supabase = require('./config/supabase.js')
 const bodyParser = require('body-parser');
 require('dotenv').config();
 //uninstall and remove livereload and connect in production
-const livereload = require('livereload');
-const connectLiveReload = require('connect-livereload');
+
 const cookieParser = require('cookie-parser')
 const loadMiddleware = require('./middleware/loadMiddleware.js')
 const authStateChangeMiddleware = require('./middleware/authStateChange.js')
@@ -15,17 +14,11 @@ const supabaseKey = process.env.SUPABASE_KEY;
 const app = express();
 
 
-const liveReloadServer = livereload.createServer();
-liveReloadServer.watch(path.join(__dirname, 'public'));
-liveReloadServer.server.once("connection", () => {
-  setTimeout(() => {
-    liveReloadServer.refresh("/");
-  }, 100);
-});
+
 
 app.use(bodyParser.json());
 app.use(cookieParser())
-app.use(connectLiveReload());
+
 app.use(loadMiddleware)
 app.use(authStateChangeMiddleware)
 

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link 
+    rel="preload" 
+    as="style"
+    onload="this.rel='stylesheet'"
+    href="/profile/profile.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="icon" type="image/x-icon" href="/assets/hothaul-logo copy.ico">
+    <title>My Profile: HotHaul</title>
+</head>
+<body>
+    <div class="authSet">
+        <header>
+            <div>
+                <span id="back" class="material-symbols-outlined">
+                    arrow_back_ios
+               </span>
+    
+            </div>
+        </header>
+    </div>
+    <main>
+        <div class="noAuth">
+            <div style="background:linear-gradient(to bottom,#00000071,rgba(12, 2, 47, 0.476)),url('/assets/pfpnoAuth.jpg') no-repeat top center; background-size: cover; height:55vh;">
+                <span class="material-symbols-outlined">
+                    home
+                    </span>
+            </div>
+            <div class="profile-banner">
+                <p>Hey there!</p>
+                <h3>Something about food and tastebuds</h3>
+                <p>Take a moment and sign-up or sign-in to HotHaul to see more</p>
+                <button id="/sign-up" style="background-color: rgb(106, 0, 255); color:rgb(255, 255, 255)">Create An Account</button>
+                <button id="/sign-in" style="background-color: rgb(239, 223, 255); color:blueviolet;">Sign In</button>
+                <p style="font-size:x-small;">Note that some of HotHaul won't be available unless you're signed in</p>
+            </div>     
+        </div>
+        <div class="authSet">
+            <div class="profile-info">
+                <div class="profile-icon">
+                    <span> O </span>
+                </div>
+                <h3>Opal</h3>
+                <p class="date-joined">Joined August 17,2024</p>
+            </div>
+            <div class="general-info">
+                <h3>General</h3>
+                <div class="listItem">
+                    <span class="material-symbols-outlined">
+                        person
+                        </span>
+                    <p> Opal</p>
+                </div>
+                <div class="listItem">
+                    <span class="material-symbols-outlined">
+                        mail
+                        </span>
+                    <p>opalreal@gmail.com</p>
+                </div>
+                <div class="listItem">
+                    <span class="material-symbols-outlined">
+                        call
+                        </span>
+                    <p>(123) 456-7890</p>
+                </div>
+                <div class="listItem fill-bar">
+                    <span class="material-symbols-outlined">
+                        home_pin
+                    </span>
+                     <div id="address" class="address-tab">      
+                        <p> Addresses</p>
+                        <span class="material-symbols-outlined">
+                             keyboard_arrow_down
+                        </span>
+                    </div>
+                </div>
+                <div id="hidden-address">
+                    <select id="address-dropdown" size="4">
+                        <option value="1">123 Main St, Springfield</option>
+                        <option value="2" selected>456 Elm St, Shelbyville</option>
+                        <option value="3">789 Maple St, Capital City</option>
+                      </select>
+                </div>
+            </div>
+            <button id="sign-out">Sign Out</button>
+            <div class="version">
+                <span> Version 1.28.1 (1128001)</span>
+                <span> &copy; 2024 Powered by Supabase</span>
+            </div>
+        </div>
+    </main>
+    <div class="authSet">
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="/home"><span class="material-symbols-outlined">
+                        home
+                        </span><p>Home</p></a></li>
+                    <li><a href="#"><span class="material-symbols-outlined">
+                        bookmark
+                        </span><p>Favorites</p></a></li>
+                    <li><a href="#"><span class="material-symbols-outlined">
+                        orders
+                        </span><p>Orders</p></a></li>
+                    <li><a href="/profile"><span class="material-symbols-outlined">
+                        person
+                        </span><p>Profile</p></a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+    <script src="/profile/profile.js" defer></script>
+</body>
+</html>

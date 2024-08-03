@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="preload"
+    as="style"
+    onload="this.rel = 'stylesheet'"
+    href='/home/home.css'>
+   
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    <title>HotHaul: Delivery App</title>
+    <link rel="icon" type="image/x-icon" href="/assets/hothaul-logo copy.ico">
+</head>
+<body>
+    <header>
+        
+    </header>
+    <nav>
+        <img src="/assets/hothaul-logo-no-bg.png" alt="HotHaul Logo" class="logo" width="50" height="auto">
+        <container class="delivery-overiew">
+            <p>Deliver <span> &#x25CF;</span> Now </p>
+            <div class="address-dropdown">
+                <span>Raleway 31 ST</span>
+                <img src="/assets/address-drop.svg" alt="Down arrow"class="icon-drop" width="15"></img>
+            </div>
+        </container>
+       <a href="/carts" ><span id="cart" class="material-symbols-outlined">
+        shopping_cart
+        </span></a>
+    </nav>
+    <main>
+        <section class="cuisines">
+            <div class="cuisines-flex">
+                <div class="cuisine-card">
+                    <img src="/assets/cuisine-all.jpeg" alt="All Cuisines">
+                    <h6>All cuisines</h6>
+                </div>
+                <div class="cuisine-card">
+                    <img src="/assets/cuisine-all.jpeg" alt="All Cuisines">
+                    <h6>Thai</h6>
+                </div>
+                <div class="cuisine-card">
+                    <img src="/assets/cuisine-all.jpeg" alt="All Cuisines">
+                    <h6>Cuban</h6>
+                </div>
+                <div class="cuisine-card">
+                    <img src="/assets/cuisine-all.jpeg" alt="All Cuisines">
+                    <h6>American</h6>
+                </div>
+                <div class="cuisine-card">
+                    <img src="/assets/cuisine-all.jpeg" alt="All Cuisines">
+                    <h6>Indian</h6>
+                </div>
+                <div class="cuisine-card">
+                    <img src="/assets/cuisine-all.jpeg" alt="All Cuisines">
+                    <h6>Nigerian</h6>
+                </div>
+                <div class="cuisine-card">
+                    <img src="/assets/cuisine-all.jpeg" alt="All Cuisines">
+                    <h6>Pastries</h6>
+                </div>
+                <div class="cuisine-card">
+                    <img src="/assets/cuisine-all.jpeg" alt="All Cuisines">
+                    <h6>Japanese</h6>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="ad-banner">
+            <div class="ad-obj">
+                <div class="ad-offer">
+                    <h3>30% OFF</h3>
+                    <p>Valid for your first delivery</p>
+                    <a href="#deals"><button>ORDER NOW</button></a>
+                </div>
+                <img src="/assets/excellent-review.png">
+            </div>
+        </section>
+
+        <section class="nearby-vendors">
+            <span class="header-shared">
+                <h2>Kitchens near you</h2>
+                <p>See all</p>
+            </span>
+       <div class="nearby-moving-carousel">
+           <!-- <div class="nearby-container">
+                <div class="nearby-carousel-card" style="background-image:linear-gradient(to bottom,#0000008b,#2725253b),url(assets/vendor-diner.jpeg);">
+                    <div class="card-header">
+                        <span class="ratings">
+                            <div class="ratings-align-center">
+                                <svg class="star" width="10" height="20">
+                                    <polygon points="5,0.5 2,10 9,4 0.5,4 8,10"/>
+                                </svg>
+                                <p id="avg-rating">4.8</p>
+                                <span id="total-ratings">(103)</span>
+                            </div>
+                        </span>
+                        <button class="save-vendor"><img src="assets/icon-heart.svg" alt="Heart"></button>
+                    </div>
+                </div>
+                <div class="vendor-details">
+                    <div class="vendor-img-and-details">
+                        <img src="assets/vendor-details-diner.jpeg" alt="FloDinerLogo" width="30" height="30">
+                        <div class="vendor-name-and-cuisine">
+                            <h5>Flo's Diner</h5>
+                            <p>Homestyle &#x25CF; American</p>
+                        </div>
+                    </div>
+                    <h6 class="time">30 mins</h6>
+                </div>    
+            </div>  -->
+        </div>
+            
+        </section>
+        <section class="best-deals" id="deals">
+            <span class="header-shared">
+                <h2>Best Deals</h2>
+                <p>See all</p>
+            </span>
+         <div class="best-deals-carousel">
+            <div class="best-deal-vendor-item">
+                <div class="best-deal-vendors" style="background-image:linear-gradient(to bottom,#0000008b,#2725253b),url(/assets/best-vendor-icecream.jpg);">
+                    <div class="discount-amt">
+                        <p>45% off</p>
+                    </div>
+                    <div class="best-vendor-pfp" style="background-image:url(/assets/best-vendor-profile-icecream.jpg);"></div>
+                </div>
+                <div class="best-vendor-card">
+                    <h5>Delish Creamery </h5>
+                    <p>Icecream &#x25CF; Frozen</p>
+                </div>
+            </div>
+         </div>   
+        </section>
+        
+        
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="/home"><span class="material-symbols-outlined">
+                    home
+                    </span><p>Home</p></a></li>
+                <li><a href="/favorites"><span class="material-symbols-outlined">
+                    bookmark
+                    </span><p>Favorites</p></a></li>
+                <li><a href="/orders"><span class="material-symbols-outlined">
+                    orders
+                    </span><p>Orders</p></a></li>
+                <li><a href="/profile"><span class="material-symbols-outlined">
+                    person
+                    </span><p>Profile</p></a></li>
+            </ul>
+        </nav>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script> 
+    <script type="module" src="/home/home.js" defer></script> 
+    
+</body>
+</html>

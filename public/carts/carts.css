@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root{
+    --main-small-color:#acacac ;
+    --main-padding:1.5rem;
+    --main-outer-border:#e9e9e9;
+    --main-alignment:1rem;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:-apple-system,'Segoe UI','Lato', sans-serif;
+    position: relative;
+    font-display: swap;
+    background-color: #f9f9f9;
+    box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.301);
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 500;
+}
+span,input{
+    font-family: 'Lato';
+}
+button{
+    cursor: pointer;
+}
+span.material-symbols-outlined{
+    font-size: 1.5rem;
+    color:#000000;
+    font-weight: 300;
+}
+header{
+    display: grid;
+    grid-template-columns: max-content auto;
+    padding-top:2rem;
+    margin:0rem 1.5rem 0rem ; 
+}
+header nav{
+    display: flex;
+    align-items: center;
+}
+header h1{
+    text-align: center;
+}
+main{
+padding: 2.5rem 2rem;
+min-height: 100vh;
+margin-inline: auto;
+
+}
+main div.cartCard{
+    border-radius: 2rem;
+    box-shadow: 1px 1px 5px #00000087;
+    margin-bottom: 1rem;
+}
+div.cartCard div.cardTop{
+    border-radius: 2rem 2rem 0rem 0rem;
+    height:10.5rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    border: none;
+    background-size: contain;
+}
+div.cardTop span{
+    font-weight: 600;
+    /* color:rgb(194, 22, 22); */
+}
+main div.cartCard div.cardBottom{
+    padding: 1rem 2rem;
+    display:flex;
+    gap:2rem;
+    border: none;
+}
+div.cardBottom div.cardLogo{
+    width:3rem; 
+    height:3rem; 
+    border-radius: 50%;
+    background-size:cover;
+    background-position: center;
+    border: 1px solid #d1d1d1;
+}
+
+
+footer{
+    font-size: 0.7rem;
+    background-color: #fffffffc;
+    padding-top:1rem;
+    position:sticky;
+    top:auto;
+    bottom: 0;
+    left: 0;
+    border-top:1px solid #dedddd;
+    border-radius: 0rem 0rem 0.3rem 0.3rem;
+    margin-inline:auto;
+}
+
+footer nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    text-align: center;
+    font-weight:400;
+    color:#000000;
+    padding-bottom: 1rem;
+    
+
+}
+footer nav ul li a{
+    text-decoration: none;
+    color:inherit;
+}
+footer :is(.material-symbols-outlined,li):hover,
+footer :is(.material-symbols-outlined,li):active{
+    color:#8d39d2;
+}
+
+@media screen and (min-width: 769px) {
+    body{
+        width:60%;
+        margin-inline:auto;
+    }
+    
+}

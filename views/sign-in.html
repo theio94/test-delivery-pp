@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link 
+    rel="preload" 
+    as="style"
+    onload="this.rel='stylesheet'"
+    href="/sign-in/sign-in.css">
+    <link rel="icon" type="image/x-icon" href="/assets/hothaul-logo copy.ico">
+    <title>Login HotHaul</title>
+</head>
+<body>
+
+    <main>
+       
+       <div class="loginContainer">
+        
+        <img class="logo" src="/assets/hothaul-logo-no-bg.png" alt="HotHaul" width="60">
+        <h3>HotHaul User Login</h3>
+        <span class="signUpSpan">Don't have an account?<a href="/sign-up"> Sign Up</a></span>
+        <form id="sign-in" >
+            <label for="t3">Email Address</label>
+            <input type="email" placeholder="Enter your email address" id="t3" autocomplete="on"required>  
+            <label for="t4">Password</label>
+            <input type="password" placeholder="Enter your password" id="t4" autocomplete="on"required>
+            <div class="show-password">
+                <input id="t5" type="checkbox">
+                <label for="t5">Show Password</label>
+            </div>
+            <button id="btnSignIn" role="submit">Continue</button>
+        </form>
+        <span>or</span>
+        <button id="withGoogle">
+            <span><img src="/assets/google_login_logo.png" height="20">
+            Continue with Google</span>
+        </button>
+        <span>Continue as a <a href="#">Guest</a></span>
+       </div>
+       
+    </main>
+  
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script> 
+    <script src="/sign-in/sign-in.js" defer></script> 
+</body>
+</html>
+
+<!-- 
+Steps for Login
+1. open login page
+2.select log in or sign up
+3. Enter credentials
+4. if sign up , show sign up successful, then fill out form for profile details 
+5. Profile detail : first and last name, use address from dropdown menu  
+6. Once all set up home page is open
+7. On the homepage, the orders tab will show all orders for user profile X,
+if there aren't any orders under a profile, show No orders yet
+8. Only allow a cart for one store at a time, the user has to either clear the cart or purchase an item
+9. Same as 7 but for favorites -->

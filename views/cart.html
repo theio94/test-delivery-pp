@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+        rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" 
+        as="font"
+        type="font/woff2"
+        onload="this.rel='stylesheet'"
+        crossorigin="anonymous"/>
+        <link 
+        rel="preload" 
+        as="style"
+        onload="this.rel='stylesheet'"
+        href="/cart/cart.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="icon" type="image/x-icon" href="/assets/hothaul-logo copy.ico">
+        <title>Hot Haul</title>
+    </head>
+    <body>
+        <header>
+            <div class="page-intro">
+                <span class="material-symbols-outlined">
+                    arrow_back_ios
+                    </span>
+                <h1>My Cart</h1>
+            </div>
+            <div class="cart-details">
+                <h3>Total Items (4)</h3>
+                <button>Empty Cart</button>
+            </div>
+        </header>
+        <main>
+            <div class="cart-items">
+                <div class="new-item" id="i-1">
+                    <div class="item-box">
+                        <div class="img-box">
+                            <img src="/assets/vendor-indian1.jpg" width="100">
+                        </div>
+                        <div class="item-desc">
+                            <h4 class="itemName">Deluxe Cotton Candy</h4>
+                            <h5 class="itemSection">Medium, 2x Extra Wings, 3x Lucky Charms, Utensils, Ranch Dressing, 2x Extra Wings, 3x Lucky Charms, Utensils, Ranch Dressing</h5>    
+                            <h3>$24.50</h3>
+                        </div>
+                        <div class="item-interact">
+                            <span id="delete" class="material-symbols-outlined">
+                                close
+                            </span>
+                            <div class="quantity-box">
+                                <button id="decrease"><span class="material-symbols-outlined">
+                                    remove
+                                </span></button>
+                                <input type="number" value="1" id="i-1" readonly>
+                                <button id="increase"><span class="material-symbols-outlined">
+                                    add
+                                 </span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="new-item" id="i-2">
+                    <div class="item-box">
+                        <div class="img-box">
+                            <img src="/assets/vendor-thai1.jpg" width="100">
+                        </div>
+                        <div class="item-desc">
+                            <h4 class="itemName">Deluxe Cotton Candy</h4>
+                            <h5 class="itemSection">Medium, 2x Extra Wings, 3x Lucky Charms, Utensils, Ranch Dressing, 2x Extra Wings, 3x Lucky Charms, Utensils, Ranch Dressing</h5>    
+                            <h3>$24.50</h3>
+                        </div>
+                        <div class="item-interact">
+                            <span id="delete" class="material-symbols-outlined">
+                                close
+                            </span>
+                            <div class="quantity-box">
+                                <button id="decrease"><span class="material-symbols-outlined">
+                                    remove
+                                </span></button>
+                                <input type="number" value="1" id="i-2" readonly>
+                                <button id="increase"><span class="material-symbols-outlined">
+                                    add
+                                 </span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="new-item" id="i-3">
+                    <div class="item-box">
+                        <div class="img-box">
+                            <img src="/assets/cart-item-cotton-candy.png" width="100">
+                        </div>
+                        <div class="item-desc">
+                            <h4 class="itemName">Deluxe Cotton Candy</h4>
+                            <h5 class="itemSection">Medium, 2x Extra Wings, 3x Lucky Charms, Utensils, Ranch Dressing, 2x Extra Wings, 3x Lucky Charms, Utensils, Ranch Dressing</h5>    
+                            <h3>$24.50</h3>
+                        </div>
+                        <div class="item-interact">
+                            <span id="delete" class="material-symbols-outlined">
+                                close
+                            </span>
+                            <div class="quantity-box">
+                                <button id="decrease"><span class="material-symbols-outlined">
+                                    remove
+                                </span></button>
+                                <input type="number" value="1" id="i-3" readonly>
+                                <button id="increase"><span class="material-symbols-outlined">
+                                    add
+                                 </span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="new-item" id="i-4">
+                    <div class="item-box">
+                        <div class="img-box">
+                            <img src="/assets/cart-item-cotton-candy.png" width="100">
+                        </div>
+                        <div class="item-desc">
+                            <h4 class="itemName">Deluxe Cotton Candy</h4>
+                            <h5 class="itemSection">Medium, 2x Extra Wings, 3x Lucky Charms, Utensils, Ranch Dressing, 2x Extra Wings, 3x Lucky Charms, Utensils, Ranch Dressing</h5>    
+                            <h3>$24.50</h3>
+                        </div>
+                        <div class="item-interact">
+                           <button>
+                                <span id="delete" class="material-symbols-outlined">
+                                    close
+                                </span>
+                           </button> 
+                            <div class="quantity-box">
+                                <button id="decrease"><span class="material-symbols-outlined">
+                                    remove
+                                </span></button>
+                                <input type="number" value="1" id="i-4" readonly>
+                                <button id="increase"><span class="material-symbols-outlined">
+                                    add
+                                 </span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="purchase-total">
+                <div class="vendor-total">
+                   <div class="cost-col" >
+                        <h5>Subtotal</h5> 
+                        <h4 id="subtotal">$30.99</h4>
+                   </div> 
+                   <div class="cost-col" >
+                        <h5>Service Fees</h5> 
+                        <h4 id="service-fee">$2.99</h4>
+                   </div> 
+                   <div class="cost-col">
+                    <h5>Delivery Fee</h5> 
+                    <h4 id="delivery-fee">$0.99</h4>
+               </div> 
+                   <div class="cost-col" >
+                        <h5>Discount</h5> 
+                        <h4 id="discount">-$5.80</h4>
+                    </div> 
+
+                </div>
+                
+                <div class="submit-cart">
+                    <div class="cart-total">
+                        <h4>Cart Total</h4>
+                        <h3>$55.32</h3>
+                    </div>
+                    <button>PROCEED TO CHECKOUT</button>
+                </div>
+                
+
+            </div>
+        </main>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="/home"><span class="material-symbols-outlined">
+                        home
+                        </span><p>Home</p></a></li>
+                    <li><a href="/favorites"><span class="material-symbols-outlined">
+                        bookmark
+                        </span><p>Favorites</p></a></li>
+                    <li><a href="/orders"><span class="material-symbols-outlined">
+                        orders
+                        </span><p>Orders</p></a></li>
+                    <li><a href="/profile"><span class="material-symbols-outlined">
+                        person
+                        </span><p>Profile</p></a></li>
+                </ul>
+            </nav>
+        </footer>
+        <script src="http://localhost:35729/livereload.js"></script>
+        <script src="/cart/cart.js" defer></script>
+    </body>
+</html>
+
+
+<!-- If there aren't any add-ons, then show th category, 
+ otherwise show the add-ons -->

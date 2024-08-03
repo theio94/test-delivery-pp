@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+:root{
+    --main-small-color:#acacac ;
+    --main-padding:1.5rem;
+    --main-purple:#7d23c7;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+body{
+    
+    font-family:-apple-system,'Segoe UI','Lato', sans-serif;
+    position: relative;
+    
+    
+}
+header {
+    padding-block:1rem;
+    margin-inline: 1rem;
+    border:0px solid black;
+}
+
+header div{
+    display:flex;
+    justify-content: space-between;
+}
+
+header div span.material-symbols-outlined {
+    font-variation-settings:
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 18;
+    color: #000000;
+}
+
+.authSet{
+display:none;
+}
+main{
+   border:0px solid black; 
+}
+
+.noAuth{
+    display:block;
+}
+div.noAuth div.profile-banner{
+    padding:1rem 3rem;
+    background-color: rgb(38, 0, 92);
+    color:#ffffff;
+    text-align: center;
+    font-weight: 300; 
+    display:flex;
+    flex-direction: column;
+    gap:1rem;
+}
+div.noAuth div.profile-banner button{
+    padding:1.5rem;
+    border-radius: 2rem;
+    border:none;
+}
+
+main div.profile-info{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    user-select: none;
+}
+div.profile-info div.profile-icon{
+    background-color:#f2e3ff;
+    color:#7d23c7;
+    border-radius: 50%;
+    padding:2rem 2.5rem;
+}
+div.profile-icon span{
+    font-size:2rem;
+}
+div.profile-info h3{ 
+    padding-block:0.5rem;
+    font-weight:500;
+}
+div.profile-info p.date-joined{
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: #838383;
+}
+main div.general-info{
+    border-radius: 1rem;
+    border:0.5px solid #d2d2d2;
+    padding:1.5rem;
+    margin-inline: 1rem;
+    margin-block: 2rem 1rem;
+
+}
+div.general-info div.listItem{
+    display:flex;
+    gap:1rem;
+    padding: 1rem 0.5rem;
+    border-bottom:0.5px solid #d2d2d2;
+    font-size: 0.9rem;
+}
+
+div.listItem div.address-tab span{
+    display: block;
+}
+div.listItem div.address-tab{
+    user-select: none;
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+}
+
+div.listItem.fill-bar:is(:focus,:hover){
+    background-color:var(--main-purple);
+    color: #f2e3ff;
+}
+div#hidden-address{
+display: none;
+}
+select#address-dropdown{
+    /* margin-inline:1rem; */
+    width:100%;
+    appearance: none;
+    border:none;
+}
+select#address-dropdown option{
+    padding:1rem;
+}
+select#address-dropdown option:checked{
+    background:var(--main-purple);
+    color: #ffffff;
+    
+
+}
+select:-internal-list-box {
+    appearance: auto;
+    align-items: flex-start;
+    vertical-align: text-bottom;
+    white-space: nowrap;
+    border: none;
+}
+
+button#sign-out{
+    border:none;
+    border-radius: 2rem;
+    background-color: #eeeeee;
+    color:var(--main-purple);
+    padding:1rem;
+    width:80%;
+    display: block;
+    margin: 0rem auto 3rem;
+    
+}
+
+ 
+div.version{
+    user-select: none;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:0.5rem;
+    font-size: 0.6rem;
+    color: #c4c4c4;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+
+
+
+footer{
+    padding-inline:1.5rem;
+    font-size: 0.7rem;
+    background-color: #fffffffc;
+    padding-top:1rem;
+    position:sticky;
+    top:auto;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.301);
+}
+footer nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    text-align: center;
+    gap:2rem;
+    color:#000000;
+    text-decoration: none;
+    padding-bottom: 1rem;
+}
+footer nav ul li a{
+    text-decoration: none;
+    color:inherit;
+}
+footer :is(.material-symbols-outlined,li):hover,
+footer :is(.material-symbols-outlined,li):active{
+    color:var(--main-purple);
+}
+
+@media screen and (min-width: 769px) {
+    body{
+        width:50%;
+        margin-inline:auto;
+        border: 1px solid #acacac;
+        border-block:none;
+        position:relative;
+    }
+    
+    
+}
+

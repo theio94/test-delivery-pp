@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link 
+    rel="preload" 
+    as="style"
+    onload="this.rel='stylesheet'"
+    href="/kitchen/kitchen.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="icon" type="image/x-icon" href="/assets/hothaul-logo copy.ico">
+    <title>Hot Haul</title>
+</head>
+<body>
+    <header style="border:none;">
+    <!--  <header style="background-image:linear-gradient(to bottom,#0000008b,#2725253b),url(/delivery-food-app/assets/vendor-koreanfastfood.jpg);"> -->
+        <div class="hd-container">
+            <a href="/home/"><span class="material-symbols-outlined">
+                arrow_back_ios
+                </span></a>
+            <span class="material-symbols-outlined">
+                favorite
+            </span>
+        </div>
+       
+    </header>
+    <main>
+        <section class="vendor-header">
+                <div class="v-head">
+                    <h3>Vendor Name</h3>
+                    <p>Vendor &#x25CF; Cuisines</p>
+                </div>
+                <span class="ratings">
+                    <div class="ratings-align-center">
+                        <svg class="star" width="10" height="20">
+                            <polygon points="5,0.5 2,10 9,4 0.5,4 8,10"/>
+                        </svg>
+                        <p id="avg-rating">4.8</p>
+                        <span id="total-ratings">(103)</span>
+                    </div>
+                </span>
+        </section>
+
+        <section class="meal-option">
+            <div class="tabs">
+                <input type="radio" name="rGroup" value="1" id="r1" checked="checked" />
+                <label class="tab-style" id="delivery-tab" for="r1">
+                    <h4>Delivery</h4>
+                    <p>$ 2.00</p>
+                </label>
+                <input type="radio" name="rGroup" value="2" id="r2" />
+                <label class="tab-style" id="pickup-tab" for="r2">
+                    <h4>Pickup</h4>
+                    <p>Unavailable</p>
+                </label>
+            </div>
+        </section>
+
+        <section class="vendor-categories">
+            <div class="cat-tags">
+                <!-- <input type="radio" name="vGroup" value="1" id="v1" checked="checked" />
+                <a href="#" class="cat-tag-style">
+                    <label class="vGroup-label" for="v1">
+                        <h4>Section 1</h4>
+                    </label>
+                </a>
+
+                <input type="radio" name="vGroup" value="2" id="v2" />
+                <a href="#" class="cat-tag-style">
+                    <label class="vGroup-label" for="v2">
+                        <h4>Section 2</h4>
+                    </label>
+                </a>
+
+                <input type="radio" name="vGroup" value="3" id="v3"/>
+                <a href="#" class="cat-tag-style">
+                    <label class="vGroup-label" for="v3">
+                        <h4>Section 3</h4>
+                    </label>
+                </a> -->
+                
+            </div>
+        </section>
+
+        <section class="vendor-cat-listed>" id="section1">
+           <!--  <h2>Appetizers 🫕</h2> -->
+           <!--  <div class="category-items"> -->
+                <!-- <div class="item">
+                        <div class="meal-img" style="background-image:url(assets/meal1-template.jpg);"></div>
+                        <div class="item-text">
+                            <p>730 kcal</p>
+                            <h3>Meal Name 1</h3>
+                            <p>Meal description and details. Of course it is wrapped</p>
+                            <h4 class="price">$ 12.99</h4>
+                        </div>
+                    <button class="add-to-cart"> + </button>
+                </div>
+
+                <div class="item">
+                    <div class="meal-img" style="background-image:url(assets/meal1-template.jpg);"></div>
+                    <div class="item-text">
+                        <p>730 kcal</p>
+                        <h3>Meal Name 1</h3>
+                        <p>Meal description and details. Of course it is wrapped</p>
+                        <h4 class="price">$ 12.99</h4>
+                    </div>
+                    <button class="add-to-cart"> + </button>
+                </div> -->
+
+            </div> <!-- End of category items -->
+        </section>
+
+        <!--More Category Sections Here-->
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script> 
+    <script src="/kitchen/kitchen.js" defer></script>    
+</body>
+</html>
+
+<!-- Loading Thought Process
+1. Click on vendor of choice
+2. Javascript of template runs
+3. All vendors available menu items load 
+4. Select and Customize
+5. Go to Cart 
+
+TO run js -->
+
+

@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root{
+    --main-small-color:#acacac ;
+    --main-padding:1.5rem;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family:-apple-system,'Segoe UI','Lato', sans-serif;
+    position: relative;
+    font-weight: 300;
+}
+a{
+    text-decoration: none;
+}
+header{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height:40vh;
+    z-index: 0;
+    position: sticky;
+    top:0;
+}
+header div.hd-container{
+    padding-top:2rem;
+    padding-inline: 2rem;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between; 
+}
+header div.hd-container a{
+    color:inherit;
+}
+main{
+    background-color: #ffffff;
+    border-radius:3rem 3rem 0rem 0rem;
+    padding:1.5rem 2rem;
+    z-index:1;
+    position: relative;
+    bottom:4rem;
+}
+
+section.vendor-header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:1rem;
+    
+    
+}
+section.vendor-header div.v-head{
+    margin-bottom: 1rem;
+}   
+section.vendor-header div.v-head p{
+    color:var(--main-small-color);
+    font-size: 0.8rem;
+    padding-top:0.3rem;
+}
+span.ratings{
+    border:1px solid #e1e1e1;
+    border-radius: 2rem;
+}
+
+span.ratings div.ratings-align-center{
+    display:flex;
+    align-items: center;
+    font-size: 0.8rem;
+    font-weight: 800;
+    padding-block: 0.5rem;
+   /*  border:1px solid #e1e1e1;
+    border-radius: 2rem; */
+    
+}
+div.ratings-align-center span{
+    color:var(--main-small-color);
+    font-size:0.6rem;
+    margin-inline: 0.3rem 1rem;
+}
+svg{
+   padding: 0.25rem 0;
+   margin-inline:0.5rem 0.2rem;
+   
+}
+
+svg polygon{
+    fill:#ffde0a;
+    stroke:#ffde0a;
+    stroke-width:1.2;
+    stroke-linecap: round;
+    stroke-linejoin: round; 
+    
+}
+
+section.meal-option{
+    margin-bottom:1rem;
+}
+section.meal-option div.tabs{
+    background:#dcdbdb;
+    padding:0.3rem;
+    display:flex;
+    justify-content: space-between;
+    border-radius: 2rem;
+}
+div.tabs label.tab-style{
+    padding:0.5rem 7vw;
+    text-align: center;
+}
+div.tabs label.tab-style p{
+font-size: 0.8rem;
+}
+div.tabs input[type=radio], div.cat-tags input[type=radio]{
+    display: none;
+} 
+div.tabs input[type=radio]:checked + .tab-style{
+    background: #f6f6f6;
+    padding:0.5rem 7vw;
+    border-radius: 2rem;
+}
+
+section.vendor-categories{
+    margin-inline:0rem -1rem;
+    overflow-x: scroll;
+    margin-bottom: 1rem;
+    white-space: nowrap;
+    scrollbar-width: none;
+}
+section.vendor-categories::-webkit-scrollbar{
+    display: none;
+}
+section.vendor-categories div.cat-tags{
+    display:flex;
+    gap:1rem;
+}
+div.cat-tags h4.cat-tag-style{
+    border: 2px solid #dcdbdb;
+    border-radius: 2rem;
+    padding:0.5rem;
+    text-decoration: none;
+    color:black;
+    font-size: 0.8rem;
+}
+div.cat-tags h4.cat-tag-style:is(:hover,:focus-within){
+    background: #882cb9;
+    border: 2px solid #882cb9;
+    color:#fff;
+}
+
+/* Menu Output styling */
+section.vendor-cat-listed h2{
+    margin-block:5% 0rem;
+}
+div.category-items{
+    margin-block: 2rem 20%;
+    display:flex;
+    flex-direction: column;
+    gap:1rem;
+}
+div.category-items div.item{
+    display:flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    gap:1rem;
+    background-color: #ffffff;
+    border: 1px solid #dcdbdb;
+    border-radius: 1rem;
+    padding:0.3rem 0.3rem 0.5rem 0.3rem;
+    cursor: pointer;
+}
+
+
+
+div.meal-img{
+    width: 8rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 1rem;
+}
+div.category-items div.item div.item-text{
+    display:flex;
+    flex-direction: column;
+    gap:0.5rem;
+    width: 70%;
+}
+
+div.item div.item-text p{ 
+    color: #787878;
+    font-size: 0.8rem;
+}
+/* div.category-items div.item button,
+div.infoBox div.meal-img{
+    width:8rem;
+} */
+div.category-items div.item button{
+    font-size:2rem;
+    width:8rem;
+    border-radius: 1rem;
+    border: none;
+}
+div.category-items div.item button:is(:hover,:active){
+    background-color: #882cb9;
+    color:#ffffff;
+}
+
+/* Media Queries */
+@media screen and (min-width: 560px) {
+    body{
+        width:60%;
+        margin-inline:auto;
+        border: 1px solid #acacac;
+        border-block:none;
+        position:relative;
+    }
+    
+}
